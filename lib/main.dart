@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_carrot/pages/main_page.dart';
 import 'package:flutter_carrot/theme.dart';
 
 void main() {
@@ -15,24 +16,6 @@ class MyApp extends StatelessWidget {
       theme: theme(),
       title: "CarrotMarket",
       home: MainPage(),
-    );
-  }
-}
-
-class MainPage extends StatefulWidget {
-  const MainPage({super.key});
-
-  @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("MainPage"),
-      ),
     );
   }
 }
