@@ -9,6 +9,8 @@ class ProductItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 135,
+      padding: EdgeInsets.all(16.0),
       child: Row(
         children: [
           ClipRRect(

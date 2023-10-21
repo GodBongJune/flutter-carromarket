@@ -18,10 +18,11 @@ class ProductDetail extends StatelessWidget {
           SizedBox(height: 4.0),
           Text("${product.address}  • ${product.publishedAt}"),
           SizedBox(height: 4.0),
-          Text("${numberFormat(product.price)}원",
-              style: textTheme().displayMedium),
-          // ToDo : 나중에 Spacer 해결해보자  ui03
-          // Spacer(),
+          Text(
+            "${numberFormat(product.price)}원",
+            style: textTheme().displayMedium,
+          ),
+          Spacer(),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
