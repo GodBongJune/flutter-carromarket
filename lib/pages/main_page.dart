@@ -1,5 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_carrot/pages/chatting/chatting_page.dart';
+import 'package:flutter_carrot/pages/home/home_page.dart';
+import 'package:flutter_carrot/pages/my_carrot/my_carrot_page.dart';
+import 'package:flutter_carrot/pages/near_me/near_me_page.dart';
+import 'package:flutter_carrot/pages/neighborhood_life/neighborhood_life_page.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -13,7 +18,13 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: IndexedStack(
         index: _selectedIndex,
-        children: [],
+        children: [
+          HomePage(),
+          NeighborhoodLifePage(),
+          NearMePage(),
+          ChattingPage(),
+          MyCarrotPage(),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
