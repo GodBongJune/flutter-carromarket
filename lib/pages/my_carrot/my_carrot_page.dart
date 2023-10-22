@@ -17,11 +17,7 @@ class MyCarrotPage extends StatelessWidget {
         ],
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(0.5),
-          child: Divider(
-            thickness: 0.5,
-            height: 0.5,
-            color: Colors.grey,
-          ),
+          child: Divider(thickness: 0.5, height: 0.5, color: Colors.grey),
         ),
       ),
       body: ListView(
