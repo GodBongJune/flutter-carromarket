@@ -7,21 +7,29 @@ class MyCarrotHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        _buildProfileRow(),
-        SizedBox(height: 30),
-        _buildProfileButton(),
-        SizedBox(height: 30),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Card(
+      elevation: 0.5,
+      margin: EdgeInsets.zero,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0.0)),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+        child: Column(
           children: [
-            _buildRoundTextButton("판매내역", FontAwesomeIcons.receipt),
-            _buildRoundTextButton("구매내역", FontAwesomeIcons.shoppingBag),
-            _buildRoundTextButton("관심목록", FontAwesomeIcons.heart),
+            _buildProfileRow(),
+            SizedBox(height: 30),
+            _buildProfileButton(),
+            SizedBox(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _buildRoundTextButton("판매내역", FontAwesomeIcons.receipt),
+                _buildRoundTextButton("구매내역", FontAwesomeIcons.shoppingBag),
+                _buildRoundTextButton("관심목록", FontAwesomeIcons.heart),
+              ],
+            ),
           ],
         ),
-      ],
+      ),
     );
   }
 
